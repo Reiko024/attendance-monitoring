@@ -64,21 +64,21 @@ public class Form {
 
     @FXML
     void handleLoginBtn(ActionEvent event){
-//        Parent root = null;
-//        try {
-//             root = FXMLLoader.load(App.class.getResource("dashboard.fxml"));
-//        }catch (IOException e){
-//            e.printStackTrace();
-//        }
-//
-//        Scene scene = new Scene(root);
-//        Stage stage = new Stage();
-//        stage.setScene(scene);
-//        stage.centerOnScreen();
-//
-//        stage.show();
-//
-//        Loginbtn.getScene().getWindow().hide();
+        Parent root = null;
+        try {
+             root = FXMLLoader.load(App.class.getResource("dashboard.fxml"));
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+
+        Scene scene = new Scene(root);
+        Stage stage = new Stage();
+        stage.setScene(scene);
+        stage.centerOnScreen();
+
+        stage.show();
+
+        Loginbtn.getScene().getWindow().hide();
 
 
 
