@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainSignup" prefHeight="412.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.edvg.attendancemonitoring.Form">
+   <children>
+      <ScrollPane fx:id="Scrollsign" hbarPolicy="NEVER" layoutX="9.0" layoutY="66.0" prefHeight="243.0" prefWidth="433.0" style="-fx-background-color: transparent;">
+         <content>
+            <AnchorPane prefHeight="337.0" prefWidth="435.0">
+               <children>
+                  <AnchorPane layoutX="24.0" layoutY="239.0" prefHeight="30.0" prefWidth="30.0">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="6.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/PassLogo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="24.0" layoutY="23.0" prefHeight="30.0" prefWidth="30.0">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="4.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/Vector.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="24.0" layoutY="293.0" prefHeight="30.0" prefWidth="30.0">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="6.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/PassLogo.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <TextField layoutX="54.0" layoutY="14.0" prefHeight="36.0" prefWidth="344.0" promptText="First Name" style="-fx-border-color: white;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <PasswordField layoutX="55.0" layoutY="237.0" prefHeight="33.0" prefWidth="342.0" promptText="Password" style="-fx-border-color: white;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </PasswordField>
+                  <PasswordField layoutX="56.0" layoutY="291.0" prefHeight="33.0" prefWidth="343.0" promptText="Confirm Password" style="-fx-border-color: white;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </PasswordField>
+                  <Line endX="270.0" layoutX="125.0" layoutY="56.0" startX="-100.0" />
+                  <Line endX="269.0" layoutX="125.0" layoutY="111.0" startX="-100.0" />
+                  <Line endX="270.0" layoutX="125.0" layoutY="167.0" startX="-100.0" />
+                  <AnchorPane layoutX="24.0" layoutY="74.0" prefHeight="30.0" prefWidth="30.0">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="4.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/Vector.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="24.0" layoutY="129.0" prefHeight="30.0" prefWidth="30.0">
+                     <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="4.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/Vector.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <TextField layoutX="54.0" layoutY="68.0" prefHeight="36.0" prefWidth="344.0" promptText="Last Name" style="-fx-border-color: white;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Line endX="269.0" layoutX="125.0" layoutY="226.0" startX="-100.0" />
+                  <Line endX="269.0" layoutX="125.0" layoutY="277.0" startX="-100.0" />
+                  <TextField layoutX="55.0" layoutY="126.0" prefHeight="36.0" prefWidth="344.0" promptText="Username" style="-fx-border-color: white;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                  <Line endX="269.0" layoutX="125.0" layoutY="329.0" startX="-100.0" />
+                  <AnchorPane layoutX="24.0" layoutY="189.0" prefHeight="23.0" prefWidth="30.0">
+                     <children>
+                        <ImageView fitHeight="23.0" fitWidth="21.0" layoutX="4.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../img/Vector.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+                  <TextField layoutX="54.0" layoutY="183.0" prefHeight="36.0" prefWidth="344.0" promptText="Email@yahoo.com" style="-fx-border-color: white;">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <Label layoutX="31.0" layoutY="14.0" text="Signup">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="Signupbtn" buttonType="RAISED" layoutX="249.0" layoutY="329.0" onMouseEntered="#SignupEnter" onMouseExited="#SignupExit" prefHeight="44.0" prefWidth="161.0" ripplerFill="BLACK" style="-fx-background-color: red; -fx-background-radius: 20px;" text="Sign up" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
