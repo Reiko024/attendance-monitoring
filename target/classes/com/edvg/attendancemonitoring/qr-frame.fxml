@@ -12,13 +12,13 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.edvg.attendancemonitoring.QrFrameController">
+<AnchorPane prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.edvg.attendancemonitoring.QrFrameController">
     <children>
       <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <AnchorPane>
                <children>
-                        <Label prefHeight="30.0" prefWidth="137.0" text="QR Generator" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                        <Label fx:id="title" prefHeight="30.0" prefWidth="137.0" text="QR Generator" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                             <font>
                                 <Font name="Arial Bold" size="18.0" />
                             </font>
@@ -44,7 +44,7 @@
                               <Insets />
                            </VBox.margin>
                         </AnchorPane>
-                        <TextField alignment="CENTER" maxWidth="400.0" minWidth="80.0" promptText="QR UID Generated Here" style="-fx-background-color: transparent;">
+                        <TextField fx:id="qrvalueField" alignment="CENTER" editable="false" maxWidth="400.0" minWidth="80.0" promptText="QR UID Generated Here" style="-fx-background-color: transparent;">
                            <VBox.margin>
                               <Insets />
                            </VBox.margin>
@@ -57,17 +57,20 @@
             </AnchorPane>
             <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
                <children>
-                  <JFXButton fx:id="loginBtn" buttonType="RAISED" onAction="#handleLoginBtn" onMouseEntered="#loginMouseEnter" onMouseExited="#loginMouseExit" prefHeight="44.0" prefWidth="161.0" ripplerFill="BLACK" style="-fx-background-color: red; -fx-background-radius: 20px;" text="Generate New" textFill="WHITE" HBox.hgrow="ALWAYS">
+                  <JFXButton buttonType="RAISED" prefHeight="44.0" prefWidth="161.0" ripplerFill="BLACK" style="-fx-background-color: red; -fx-background-radius: 20px;" text="Generate New" textFill="WHITE" HBox.hgrow="ALWAYS">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </JFXButton>
-                  <JFXButton fx:id="loginBtn1" buttonType="RAISED" onAction="#handleLoginBtn" onMouseEntered="#loginMouseEnter" onMouseExited="#loginMouseExit" prefHeight="44.0" prefWidth="161.0" ripplerFill="BLACK" style="-fx-background-color: red; -fx-background-radius: 20px;" text="Save" textFill="WHITE" HBox.hgrow="ALWAYS">
+                  <JFXButton buttonType="RAISED" prefHeight="44.0" prefWidth="161.0" ripplerFill="BLACK" style="-fx-background-color: red; -fx-background-radius: 20px;" text="Save" textFill="WHITE" HBox.hgrow="ALWAYS">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </JFXButton>
                </children>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
             </HBox>
          </children>
       </VBox>
