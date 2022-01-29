@@ -66,7 +66,7 @@ public class AuthenticationForms {
     void handleLoginBtn(ActionEvent event){
         Parent root = null;
         try {
-             root = FXMLLoader.load(App.class.getResource("dashboard.fxml"));
+             root = FXMLLoader.load(App.class.getResource("main-frame.fxml"));
         }catch (IOException e){
             e.printStackTrace();
         }
@@ -75,7 +75,7 @@ public class AuthenticationForms {
         Stage stage = new Stage();
         stage.setScene(scene);
         stage.centerOnScreen();
-
+        stage.setMaximized(true);
         stage.show();
 
         loginBtn.getScene().getWindow().hide();

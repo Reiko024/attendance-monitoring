@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.edvg.attendancemonitoring.QrFrameController">
+    <children>
+      <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane>
+               <children>
+                        <Label fx:id="title" prefHeight="30.0" prefWidth="137.0" text="QR Generator" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                            <font>
+                                <Font name="Arial Bold" size="18.0" />
+                            </font>
+                     <padding>
+                        <Insets bottom="40.0" left="40.0" top="60.0" />
+                     </padding>
+                        </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" />
+               </VBox.margin>
+               <children>
+                  <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 40; -fx-background-color: #E7DCDC;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane maxWidth="200.0" minWidth="200.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: grey;">
+                           <children>
+                              <ImageView fitHeight="200.0" fitWidth="200.0" pickOnBounds="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </AnchorPane>
+                        <TextField fx:id="qrvalueField" alignment="CENTER" editable="false" maxWidth="400.0" minWidth="80.0" promptText="QR UID Generated Here" style="-fx-background-color: transparent;">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </TextField>
+                        <Line endX="269.5" startX="-100.0" stroke="#575656" strokeWidth="2.0" />
+                        <Label text="QR ID" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+               <children>
+                  <JFXButton buttonType="RAISED" prefHeight="44.0" prefWidth="161.0" ripplerFill="BLACK" style="-fx-background-color: red; -fx-background-radius: 20px;" text="Generate New" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" prefHeight="44.0" prefWidth="161.0" ripplerFill="BLACK" style="-fx-background-color: red; -fx-background-radius: 20px;" text="Save" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets bottom="30.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>
