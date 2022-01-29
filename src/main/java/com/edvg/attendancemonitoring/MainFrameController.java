@@ -1,12 +1,17 @@
 package com.edvg.attendancemonitoring;
 
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.paint.Color;
 
-public class MainFrameController {
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class MainFrameController implements Initializable {
 
     @FXML
     private ImageView Profile;
@@ -81,27 +86,53 @@ public class MainFrameController {
 
     @FXML
     void handleDashboardBtn(MouseEvent event) {
+        dashboardBtn.setTextFill(Color.rgb(255, 255, 255));
+        qrBtn.setTextFill(Color.rgb(48, 48, 47));
+        employeesBtn.setTextFill(Color.rgb(48, 48, 47));
+        monitoringBtn.setTextFill(Color.rgb(48, 48, 47));
+        manualBtn.setTextFill(Color.rgb(48, 48, 47));
+
 
     }
 
     @FXML
     void handleEmployeesBtn(MouseEvent event) {
-
+        dashboardBtn.setTextFill(Color.rgb(48, 48, 47));
+        qrBtn.setTextFill(Color.rgb(48, 48, 47));
+        employeesBtn.setTextFill(Color.rgb(255, 255, 255));
+        monitoringBtn.setTextFill(Color.rgb(48, 48, 47));
+        manualBtn.setTextFill(Color.rgb(48, 48, 47));
     }
 
     @FXML
     void handleManualBtn(MouseEvent event) {
-
+        dashboardBtn.setTextFill(Color.rgb(48, 48, 47));
+        qrBtn.setTextFill(Color.rgb(48, 48, 47));
+        employeesBtn.setTextFill(Color.rgb(48, 48, 47));
+        monitoringBtn.setTextFill(Color.rgb(48, 48, 47));
+        manualBtn.setTextFill(Color.rgb(255, 255, 255));
     }
 
     @FXML
     void handleMonitoringBtn(MouseEvent event) {
-
+        dashboardBtn.setTextFill(Color.rgb(48, 48, 47));
+        qrBtn.setTextFill(Color.rgb(48, 48, 47));
+        employeesBtn.setTextFill(Color.rgb(48, 48, 47));
+        monitoringBtn.setTextFill(Color.rgb(255, 255, 255));
+        manualBtn.setTextFill(Color.rgb(48, 48, 47));
     }
 
     @FXML
     void handleQrBtn(MouseEvent event) {
-
+        dashboardBtn.setTextFill(Color.rgb(48, 48, 47));
+        qrBtn.setTextFill(Color.rgb(255, 255, 255));
+        employeesBtn.setTextFill(Color.rgb(48, 48, 47));
+        monitoringBtn.setTextFill(Color.rgb(48, 48, 47));
+        manualBtn.setTextFill(Color.rgb(48, 48, 47));
     }
 
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        dashboardBtn.setTextFill(Color.rgb(255, 255, 255));
+    }
 }

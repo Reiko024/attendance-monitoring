@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.edvg.attendancemonitoring.MainFrameController">
+    <children>
+        <HBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <AnchorPane prefHeight="534.0" prefWidth="200.0" style="-fx-background-color: #FF000080;">
+                    <children>
+                        <Label alignment="CENTER" layoutX="46.0" layoutY="174.0" prefHeight="18.0" prefWidth="102.0" text="Manager/Admin" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                        <ImageView fx:id="Profile" fitHeight="150.0" fitWidth="154.0" layoutX="17.0" layoutY="14.0" pickOnBounds="true" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="29.0">
+                            <image>
+                                <Image url="@../../../img/pic.png" />
+                            </image>
+                        </ImageView>
+                        <Label fx:id="dashboardBtn" alignment="CENTER" layoutX="46.0" layoutY="225.0" onMouseClicked="#handleDashboardBtn" onMouseEntered="#enteredDashBoardBtn" onMouseExited="#exitedDashBoardBtn" prefHeight="21.0" prefWidth="111.0" text="Dashboard" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                            <font>
+                                <Font name="Arial Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="qrBtn" alignment="CENTER" layoutX="34.0" layoutY="272.0" onMouseClicked="#handleQrBtn" onMouseEntered="#enteredQrBtn" onMouseExited="#exitedQrBtn" text="QR Generator" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                            <font>
+                                <Font name="Arial Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="employeesBtn" alignment="CENTER" layoutX="45.0" layoutY="316.0" onMouseClicked="#handleEmployeesBtn" onMouseEntered="#enteredEmployeesBtn" onMouseExited="#exitedEmployeesBtn" text="Employees" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                            <font>
+                                <Font name="Arial Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="monitoringBtn" alignment="CENTER" layoutX="45.0" layoutY="363.0" onMouseClicked="#handleMonitoringBtn" onMouseEntered="#enteredMonitoringBtn" onMouseExited="#exitedMonitoringBtn" text="Monitoring" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                            <font>
+                                <Font name="Arial Bold" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="manualBtn" alignment="CENTER" layoutX="10.0" layoutY="405.0" onMouseClicked="#handleManualBtn" onMouseEntered="#enteredManualBtn" onMouseExited="#exitedManualBtn" prefHeight="42.0" prefWidth="166.0" text="Manual &#10;Attendance" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                            <font>
+                                <Font name="Arial Bold" size="18.0" />
+                            </font>
+                        </Label>
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="displayPane" HBox.hgrow="ALWAYS" />
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>

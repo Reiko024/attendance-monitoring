@@ -7,146 +7,162 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.edvg.attendancemonitoring.DashboardController">
     <children>
-      <HBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <VBox spacing="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <AnchorPane HBox.hgrow="ALWAYS">
+            <AnchorPane>
                <children>
-                    <Label layoutX="79.0" layoutY="54.0" prefHeight="30.0" prefWidth="101.0" text="Dashboard" AnchorPane.leftAnchor="50.0">
+                    <Label prefHeight="30.0" prefWidth="101.0" text="Dashboard" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                         <font>
                             <Font name="Arial Bold" size="18.0" />
                         </font>
                     </Label>
-                  <HBox layoutX="90.0" layoutY="125.0" spacing="30.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
-                     <children>
-                          <AnchorPane maxHeight="150.0" minHeight="120.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" HBox.hgrow="ALWAYS">
-                              <effect>
-                                  <DropShadow blurType="ONE_PASS_BOX" height="23.14" offsetY="4.0" radius="12.89" width="30.42">
-                                      <color>
-                                          <Color red="0.4842105209827423" green="0.45192983746528625" blue="0.45192983746528625" opacity="0.6800000071525574" />
-                                      </color>
-                                  </DropShadow>
-                              </effect>
-                              <opaqueInsets>
-                                  <Insets top="200.0" />
-                              </opaqueInsets>
-                              <children>
-                              <AnchorPane layoutY="14.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                 <children>
-                                        <Label alignment="CENTER" layoutY="16.0" prefHeight="19.0" prefWidth="130.0" text="Total Employees" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-                                            <font>
-                                                <Font name="Calibri Bold" size="18.0" />
-                                            </font>
-                                        </Label>
-                                    <HBox alignment="CENTER" layoutX="46.0" layoutY="52.0" spacing="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-                                       <children>
-                                              <ImageView fx:id="PeopleIcon" fitHeight="42.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
-                                                  <image>
-                                                      <Image url="@../../../img/people.png" />
-                                                  </image>
-                                              </ImageView>
-                                              <Label prefHeight="18.0" prefWidth="49.0" text="20" HBox.hgrow="ALWAYS">
-                                                  <font>
-                                                      <Font name="Arial Bold" size="32.0" />
-                                                  </font>
-                                              </Label>
-                                       </children>
-                                    </HBox>
-                                 </children>
-                              </AnchorPane>
-                              </children>
-                          </AnchorPane>
-                          <AnchorPane prefHeight="111.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" HBox.hgrow="ALWAYS">
-                              <effect>
-                                  <DropShadow blurType="ONE_PASS_BOX" height="23.14" offsetY="4.0" radius="12.89" width="30.42">
-                                      <color>
-                                          <Color red="0.4842105209827423" green="0.45192983746528625" blue="0.45192983746528625" opacity="0.6800000071525574" />
-                                      </color>
-                                  </DropShadow>
-                              </effect>
-                              <opaqueInsets>
-                                  <Insets top="200.0" />
-                              </opaqueInsets>
-                              <children>
-                                  <Label alignment="CENTER" layoutX="31.0" layoutY="14.0" prefHeight="22.0" prefWidth="154.0" text="Employee Timed-in" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="14.0">
-                                      <font>
-                                          <Font name="Calibri Bold" size="18.0" />
-                                      </font>
-                                  </Label>
-                              <HBox alignment="CENTER" layoutX="42.0" layoutY="48.0" spacing="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-                                 <children>
-                                        <ImageView fx:id="CheckIcon" fitHeight="42.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
-                                            <image>
-                                                <Image url="@../../../img/check.png" />
-                                            </image>
-                                        </ImageView>
-                                        <Label prefHeight="18.0" prefWidth="49.0" text="15">
-                                            <font>
-                                                <Font name="Arial Bold" size="32.0" />
-                                            </font>
-                                        </Label>
-                                 </children>
-                              </HBox>
-                              </children>
-                          </AnchorPane>
-                          <AnchorPane prefHeight="111.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" HBox.hgrow="ALWAYS">
-                              <effect>
-                                  <DropShadow blurType="ONE_PASS_BOX" height="23.14" offsetY="4.0" radius="12.89" width="30.42">
-                                      <color>
-                                          <Color red="0.4842105209827423" green="0.45192983746528625" blue="0.45192983746528625" opacity="0.6800000071525574" />
-                                      </color>
-                                  </DropShadow>
-                              </effect>
-                              <opaqueInsets>
-                                  <Insets top="200.0" />
-                              </opaqueInsets>
-                              <children>
-                                  <Label alignment="CENTER" layoutX="37.0" layoutY="14.0" prefHeight="22.0" prefWidth="154.0" text="Employee Absent" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-                                      <font>
-                                          <Font name="Calibri Bold" size="18.0" />
-                                      </font>
-                                  </Label>
-                              <HBox alignment="CENTER" layoutX="39.0" layoutY="47.0" spacing="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
-                                 <children>
-                                        <ImageView fx:id="XIcon" fitHeight="42.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
-                                            <image>
-                                                <Image url="@../../../img/x%20icon.jpg" />
-                                            </image>
-                                        </ImageView>
-                                        <Label prefHeight="18.0" prefWidth="49.0" text="5">
-                                            <font>
-                                                <Font name="Arial Bold" size="32.0" />
-                                            </font>
-                                        </Label>
-                                 </children>
-                              </HBox>
-                              </children>
-                          </AnchorPane>
-                     </children>
-                  </HBox>
-                    <Label layoutX="79.0" layoutY="271.0" prefHeight="36.0" prefWidth="548.0" text="Employee Attendance Monitoring System" textFill="#565151" AnchorPane.bottomAnchor="255.0" AnchorPane.leftAnchor="50.0">
-                        <font>
-                            <Font name="Arial Bold" size="25.0" />
-                        </font>
-                    </Label>
-                    <Label layoutX="72.0" layoutY="335.0" prefHeight="18.0" prefWidth="58.0" text="About" AnchorPane.bottomAnchor="220.0" AnchorPane.leftAnchor="50.0">
-                        <font>
-                            <Font name="Arial Bold" size="18.0" />
-                        </font>
-                    </Label>
-                    <Text layoutX="79.0" layoutY="412.0" strokeType="OUTSIDE" strokeWidth="0.0" text="During this pandemic time, it is important to upgrade your health protocols. This system can help in improving health measures and making managing employees more efficient. The system can be used inside the office because it is mainly for employee management and attendance. This system will be designed to record employees time in and time out using a QR code. Implementing a QR code to the system will lessen physical contact during office hours." textAlignment="JUSTIFY" wrappingWidth="637.3367614746094" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0">
-                        <font>
-                            <Font size="14.0" />
-                        </font>
-                    </Text>
                </children>
+               <padding>
+                  <Insets left="40.0" top="60.0" />
+               </padding>
             </AnchorPane>
+            <HBox spacing="30.0">
+               <children>
+                    <AnchorPane maxHeight="150.0" minHeight="120.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" HBox.hgrow="ALWAYS">
+                        <effect>
+                            <DropShadow blurType="ONE_PASS_BOX" height="23.14" offsetY="4.0" radius="12.89" width="30.42">
+                                <color>
+                                    <Color red="0.4842105209827423" green="0.45192983746528625" blue="0.45192983746528625" opacity="0.6800000071525574" />
+                                </color>
+                            </DropShadow>
+                        </effect>
+                        <opaqueInsets>
+                            <Insets top="200.0" />
+                        </opaqueInsets>
+                        <children>
+                        <AnchorPane layoutY="14.0" prefHeight="111.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                                  <Label alignment="CENTER" layoutY="16.0" prefHeight="19.0" prefWidth="130.0" text="Total Employees" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                      <font>
+                                          <Font name="Calibri Bold" size="18.0" />
+                                      </font>
+                                  </Label>
+                              <HBox alignment="CENTER" layoutX="46.0" layoutY="52.0" spacing="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <children>
+                                        <ImageView fx:id="PeopleIcon" fitHeight="42.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+                                            <image>
+                                                <Image url="@../../../img/people.png" />
+                                            </image>
+                                        </ImageView>
+                                        <Label prefHeight="18.0" prefWidth="49.0" text="20" HBox.hgrow="ALWAYS">
+                                            <font>
+                                                <Font name="Arial Bold" size="32.0" />
+                                            </font>
+                                        </Label>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                        </children>
+                    </AnchorPane>
+                    <AnchorPane prefHeight="111.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" HBox.hgrow="ALWAYS">
+                        <effect>
+                            <DropShadow blurType="ONE_PASS_BOX" height="23.14" offsetY="4.0" radius="12.89" width="30.42">
+                                <color>
+                                    <Color red="0.4842105209827423" green="0.45192983746528625" blue="0.45192983746528625" opacity="0.6800000071525574" />
+                                </color>
+                            </DropShadow>
+                        </effect>
+                        <opaqueInsets>
+                            <Insets top="200.0" />
+                        </opaqueInsets>
+                        <children>
+                            <Label alignment="CENTER" layoutX="31.0" layoutY="14.0" prefHeight="22.0" prefWidth="154.0" text="Employee Timed-in" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="14.0">
+                                <font>
+                                    <Font name="Calibri Bold" size="18.0" />
+                                </font>
+                            </Label>
+                        <HBox alignment="CENTER" layoutX="42.0" layoutY="48.0" spacing="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                                  <ImageView fx:id="CheckIcon" fitHeight="42.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                      <image>
+                                          <Image url="@../../../img/check.png" />
+                                      </image>
+                                  </ImageView>
+                                  <Label prefHeight="18.0" prefWidth="49.0" text="15">
+                                      <font>
+                                          <Font name="Arial Bold" size="32.0" />
+                                      </font>
+                                  </Label>
+                           </children>
+                        </HBox>
+                        </children>
+                    </AnchorPane>
+                    <AnchorPane prefHeight="111.0" prefWidth="200.0" style="-fx-background-color: #ffffff;" HBox.hgrow="ALWAYS">
+                        <effect>
+                            <DropShadow blurType="ONE_PASS_BOX" height="23.14" offsetY="4.0" radius="12.89" width="30.42">
+                                <color>
+                                    <Color red="0.4842105209827423" green="0.45192983746528625" blue="0.45192983746528625" opacity="0.6800000071525574" />
+                                </color>
+                            </DropShadow>
+                        </effect>
+                        <opaqueInsets>
+                            <Insets top="200.0" />
+                        </opaqueInsets>
+                        <children>
+                            <Label alignment="CENTER" layoutX="37.0" layoutY="14.0" prefHeight="22.0" prefWidth="154.0" text="Employee Absent" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                <font>
+                                    <Font name="Calibri Bold" size="18.0" />
+                                </font>
+                            </Label>
+                        <HBox alignment="CENTER" layoutX="39.0" layoutY="47.0" spacing="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                                  <ImageView fx:id="XIcon" fitHeight="42.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+                                      <image>
+                                          <Image url="@../../../img/x%20icon.jpg" />
+                                      </image>
+                                  </ImageView>
+                                  <Label prefHeight="18.0" prefWidth="49.0" text="5">
+                                      <font>
+                                          <Font name="Arial Bold" size="32.0" />
+                                      </font>
+                                  </Label>
+                           </children>
+                        </HBox>
+                        </children>
+                    </AnchorPane>
+               </children>
+               <padding>
+                  <Insets left="30.0" right="30.0" />
+               </padding>
+            </HBox>
+              <Label prefHeight="36.0" prefWidth="548.0" text="Employee Attendance Monitoring System" textFill="#565151" VBox.vgrow="ALWAYS">
+                  <font>
+                      <Font name="Arial Bold" size="25.0" />
+                  </font>
+               <VBox.margin>
+                  <Insets left="40.0" />
+               </VBox.margin>
+              </Label>
+              <Label text="About" VBox.vgrow="ALWAYS">
+                  <font>
+                      <Font name="Arial Bold" size="18.0" />
+                  </font>
+               <VBox.margin>
+                  <Insets left="40.0" />
+               </VBox.margin>
+              </Label>
+              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="During this pandemic time, it is important to upgrade your health protocols. This system can help in improving health measures and making managing employees more efficient. The system can be used inside the office because it is mainly for employee management and attendance. This system will be designed to record employees time in and time out using a QR code. Implementing a QR code to the system will lessen physical contact during office hours." textAlignment="JUSTIFY" wrappingWidth="637.3367614746094" VBox.vgrow="ALWAYS">
+                  <font>
+                      <Font size="14.0" />
+                  </font>
+               <VBox.margin>
+                  <Insets left="40.0" />
+               </VBox.margin>
+              </Text>
          </children>
-      </HBox>
+      </VBox>
     </children>
 </AnchorPane>
