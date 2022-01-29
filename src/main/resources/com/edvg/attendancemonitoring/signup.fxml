@@ -11,9 +11,9 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="MainSignup" prefHeight="412.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.edvg.attendancemonitoring.Form">
+<AnchorPane fx:id="MainSignup" prefHeight="412.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.edvg.attendancemonitoring.AuthenticationForms">
    <children>
-      <ScrollPane fx:id="Scrollsign" hbarPolicy="NEVER" layoutX="9.0" layoutY="66.0" prefHeight="243.0" prefWidth="433.0" style="-fx-background-color: transparent;">
+      <ScrollPane fx:id="scrollSign" hbarPolicy="NEVER" layoutX="9.0" layoutY="66.0" prefHeight="243.0" prefWidth="433.0" style="-fx-background-color: transparent;">
          <content>
             <AnchorPane prefHeight="337.0" prefWidth="435.0">
                <children>
@@ -116,7 +116,7 @@
             <Font name="System Bold" size="36.0" />
          </font>
       </Label>
-      <JFXButton fx:id="Signupbtn" buttonType="RAISED" layoutX="249.0" layoutY="329.0" onMouseEntered="#SignupEnter" onMouseExited="#SignupExit" prefHeight="44.0" prefWidth="161.0" ripplerFill="BLACK" style="-fx-background-color: red; -fx-background-radius: 20px;" text="Sign up" textFill="WHITE">
+      <JFXButton fx:id="signupBtn" buttonType="RAISED" layoutX="249.0" layoutY="329.0" onMouseEntered="#signupMouseEnter" onMouseExited="#signupMouseExit" prefHeight="44.0" prefWidth="161.0" ripplerFill="BLACK" style="-fx-background-color: red; -fx-background-radius: 20px;" text="Sign up" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>

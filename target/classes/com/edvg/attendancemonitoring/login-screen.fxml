@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.edvg.attendancemonitoring.LoginScreenController">
+<AnchorPane prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.edvg.attendancemonitoring.LoginScreenController">
    <children>
       <AnchorPane layoutX="-3.0" layoutY="-3.0" prefHeight="500.0" prefWidth="450.0" style="-fx-background-color: grey;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -33,7 +33,7 @@
       </AnchorPane>
       <AnchorPane fx:id="loginPaneBtn" layoutX="474.0" layoutY="40.0" onMouseClicked="#handleLoginIndicatorBtn" prefHeight="42.0" prefWidth="61.0">
          <children>
-            <Label fx:id="loginBtnTxt" layoutX="6.0" layoutY="1.0" onMouseClicked="#LoginClicked" text="Login" textFill="RED">
+            <Label fx:id="loginBtnTxt" layoutX="6.0" layoutY="1.0" onMouseClicked="#loginClicked" text="Login" textFill="RED">
                <font>
                   <Font name="System Bold" size="19.0" />
                </font>
@@ -43,7 +43,7 @@
       </AnchorPane>
       <AnchorPane fx:id="signupPaneBtn" layoutX="541.0" layoutY="40.0" onMouseClicked="#handleSignupIndicatorBtn" prefHeight="42.0" prefWidth="71.0">
          <children>
-            <Label fx:id="signupBtnTxt" layoutX="6.0" layoutY="1.0" onMouseClicked="#SignupClicked" text="Signup" textFill="GREY">
+            <Label fx:id="signupBtnTxt" layoutX="6.0" layoutY="1.0" onMouseClicked="#signupClicked" text="Signup" textFill="GREY">
                <font>
                   <Font name="System Bold" size="19.0" />
                </font>
@@ -51,9 +51,9 @@
             <Pane fx:id="signupBtnIndicator" layoutX="7.0" layoutY="27.0" prefHeight="5.0" prefWidth="58.0" />
          </children>
       </AnchorPane>
-      <BorderPane fx:id="Borderpane" layoutX="450.0" layoutY="88.0" prefHeight="413.0" prefWidth="450.0">
+      <BorderPane fx:id="borderPane" layoutX="450.0" layoutY="88.0" prefHeight="413.0" prefWidth="450.0">
          <center>
-            <Pane fx:id="Pane1" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+            <Pane fx:id="pane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
          </center></BorderPane>
    </children>
 </AnchorPane>
