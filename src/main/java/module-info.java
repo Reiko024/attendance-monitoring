@@ -8,6 +8,7 @@ module com.edvg.attendancemonitoring {
     requires java.desktop;
     requires javafx.swing;
 
+
     opens com.edvg.attendancemonitoring to javafx.fxml;
     exports com.edvg.attendancemonitoring;
 }

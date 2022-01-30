@@ -11,6 +11,7 @@ import com.google.zxing.BarcodeFormat;
 import com.google.zxing.WriterException;
 import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.QRCodeWriter;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 
 import java.awt.Color;
@@ -44,7 +45,6 @@ public class QrFrameController implements Initializable {
     @FXML
     void handleGenerateBtn(ActionEvent event) {
         UUID uid = UUID.randomUUID();
-        System.out.println(uid);
         qrvalueField.setText(uid.toString());
 
         BufferedImage bufferedImage = null;
@@ -67,7 +67,6 @@ public class QrFrameController implements Initializable {
                 }
             }
 
-            System.out.println("Success...");
 
         }
         catch (WriterException e) {
