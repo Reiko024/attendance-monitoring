@@ -10,9 +10,8 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.edvg.attendancemonitoring.DashboardController">
+<AnchorPane fx:id="mainPane" minWidth="600.0" prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.edvg.attendancemonitoring.DashboardController">
     <children>
       <VBox spacing="30.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -57,7 +56,7 @@
                                     <Insets />
                                  </HBox.margin>
                                   </ImageView>
-                                  <Label prefHeight="18.0" prefWidth="49.0" text="20" HBox.hgrow="ALWAYS">
+                                  <Label fx:id="totalEmpValue" prefHeight="18.0" prefWidth="49.0" text="20" HBox.hgrow="ALWAYS">
                                       <font>
                                           <Font name="Arial Bold" size="32.0" />
                                       </font>
@@ -96,7 +95,7 @@
                                           <Image url="@../../../img/check.png" />
                                       </image>
                                   </ImageView>
-                                  <Label prefHeight="18.0" prefWidth="49.0" text="15">
+                                  <Label fx:id="timedValue" prefHeight="18.0" prefWidth="49.0" text="15">
                                       <font>
                                           <Font name="Arial Bold" size="32.0" />
                                       </font>
@@ -132,7 +131,7 @@
                                           <Image url="@../../../img/x%20icon.jpg" />
                                       </image>
                                   </ImageView>
-                                  <Label prefHeight="18.0" prefWidth="49.0" text="5">
+                                  <Label fx:id="absentValue" prefHeight="18.0" prefWidth="49.0" text="5">
                                       <font>
                                           <Font name="Arial Bold" size="32.0" />
                                       </font>
@@ -170,11 +169,11 @@
                   <Insets />
                </VBox.margin>
                <children>
-                    <Text strokeType="OUTSIDE" strokeWidth="0.0" text="During this pandemic time, it is important to upgrade your health protocols. This system can help in improving health measures and making managing employees more efficient. The system can be used inside the office because it is mainly for employee management and attendance. This system will be designed to record employees time in and time out using a QR code. Implementing a QR code to the system will lessen physical contact during office hours." textOrigin="BOTTOM" wrappingWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="40.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="0.0">
-                        <font>
-                            <Font size="14.0" />
-                        </font>
-                    </Text>
+                  <Label fx:id="aboutText" text="During this pandemic time, it is important to upgrade your health protocols. This system can help in improving health measures and making managing employees more efficient. The system can be used inside the office because it is mainly for employee management and attendance. This system will be designed to record employees time in and time out using a QR code. Implementing a QR code to the system will lessen physical contact during office hours." wrapText="true">
+                     <padding>
+                        <Insets left="40.0" right="40.0" />
+                     </padding>
+                  </Label>
                </children>
             </AnchorPane>
          </children>
