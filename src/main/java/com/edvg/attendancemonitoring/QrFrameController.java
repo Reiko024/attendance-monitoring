@@ -17,6 +17,7 @@ import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import javafx.embed.swing.SwingFXUtils;
+import javafx.scene.input.MouseEvent;
 
 
 import java.net.URL;
@@ -74,6 +75,12 @@ public class QrFrameController implements Initializable {
         }
 
         qrImage.setImage(SwingFXUtils.toFXImage(bufferedImage,null));
+    }
+
+
+    @FXML
+    void handlePrint(MouseEvent event) {
+
     }
 
 
