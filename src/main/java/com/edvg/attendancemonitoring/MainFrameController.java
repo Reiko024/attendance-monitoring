@@ -1,5 +1,8 @@
 package com.edvg.attendancemonitoring;
 
+import javafx.application.Platform;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -9,6 +12,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
@@ -38,6 +42,8 @@ public class MainFrameController implements Initializable {
 
     @FXML
     private Label qrBtn;
+
+    Stage stage;
 
     @FXML
     void enteredDashBoardBtn(MouseEvent event) {
@@ -184,5 +190,6 @@ public class MainFrameController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         dashboardBtn.setTextFill(Color.rgb(255, 255, 255));
         loadDisplay("dashboard.fxml");
+        
     }
 }

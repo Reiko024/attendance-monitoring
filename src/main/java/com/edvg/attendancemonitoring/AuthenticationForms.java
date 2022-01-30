@@ -76,6 +76,8 @@ public class AuthenticationForms {
         stage.setScene(scene);
         stage.centerOnScreen();
         stage.setMaximized(true);
+        stage.setMinWidth(1000);
+        stage.setMinHeight(600);
         stage.show();
 
         loginBtn.getScene().getWindow().hide();

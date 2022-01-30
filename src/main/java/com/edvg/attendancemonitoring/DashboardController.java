@@ -72,7 +72,7 @@ public class DashboardController implements Initializable {
                 @Override
                 public void changed(ObservableValue<? extends Boolean> observableValue, Boolean aBoolean, Boolean t1) {
                     aboutText.setPrefWidth(stage.getWidth()*0.8);
-                    
+
                 }
             });
         });
