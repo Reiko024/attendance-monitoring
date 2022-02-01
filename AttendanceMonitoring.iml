@@ -30,5 +30,6 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.junit.platform:junit-platform-engine:1.7.1" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-swing:11.0.1" level="project" />
     <orderEntry type="library" name="Maven: org.openjfx:javafx-swing:win:11.0.1" level="project" />
+    <orderEntry type="library" name="lib1" level="project" />
   </component>
 </module>
